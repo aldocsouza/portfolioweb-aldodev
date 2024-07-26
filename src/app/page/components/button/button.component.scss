@@ -1,0 +1,21 @@
+.btn{
+  background-color: var(--text-primary-light-color);
+  padding: 10px 20px;
+  color: var(--bg-secondary-light);
+
+  display: flex;
+  gap: 10px;
+}
+
+
+@media (min-width: 540px) {
+  .btn{
+    background-color: var(--text-primary-light-color);
+    padding: 20px 40px;
+    color: var(--bg-secondary-light);
+
+    display: flex;
+    gap: 10px;
+  }
+
+}
