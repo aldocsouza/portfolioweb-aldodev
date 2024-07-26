@@ -1,0 +1,49 @@
+<nav [ngClass]="'navbar navbar-expand-lg fixed-top ' + theme">
+  <div class="container-fluid max-width">
+    <a class="navbar-brand" href="#">
+      <img class="nav-logo" src="/assets/logo-dark.png" alt="logo-aldo">
+      <span>Aldo Souza</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end align-items-sm-end justify-content-between" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="nav-logo" src="/assets/logo-dark.png" alt="logo-aldo"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body navbar-collapse">
+        <ul class="navbar-nav gap-3 me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experiências</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Certificações</a>
+          </li>
+          <li class="nav-item">
+            @if(themeChange){
+              <span class="btn-theme dark" (click)="troggleThemeMode()">
+                <icon-moon></icon-moon>
+              </span>
+            }@else {
+              <span class="btn-theme light" (click)="troggleThemeMode()">
+                <icon-sun></icon-sun>
+              </span>
+            }
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
