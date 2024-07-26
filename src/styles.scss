@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root{
+  --bg-primary-light: #FBFBFB;
+  --bg-secondary-light: #F3F4F6;
+  --text-primary-light-color: #445964;
+  --text-navbar-light-color: #4B5563;
+  --title-primary-light-color: #263138;
+
+  --bg-primary-dark: #030712;
+  --bg-secondary-dark: #111827;
+  --text-primary-dark-color: #D1D5DB;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-primary-light-color);
+}
+
+a{
+  text-decoration: none;
+}
+
+
