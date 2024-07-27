@@ -1,0 +1,15 @@
+.avatar{
+  width: 263px;
+}
+
+@media (min-width: 768px){
+  .avatar{
+    width: 350px;
+  }
+}
+
+@media (min-width: 1120px){
+  .avatar{
+    width: 580px;
+  }
+}

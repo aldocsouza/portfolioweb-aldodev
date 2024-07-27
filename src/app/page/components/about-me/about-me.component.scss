@@ -1,0 +1,116 @@
+.about-me{
+
+  .max-width{
+    max-width: 1368px;
+    margin: auto;
+  }
+
+  .about-me-content{
+
+    padding: 60px 20px;
+
+    .about-title{
+      display: flex;
+      justify-content: center;
+
+      h2{
+        font-size: 36px;
+        font-weight: 900;
+      }
+
+      .h2:first-child{
+        color: #263138;
+      }
+      .h2:nth-child(2){
+        color: #445964;
+      }
+    }
+
+    .about-wrapper{
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 20px;
+
+      .about-me--avatar{
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .about-me--description{
+        text-align: justify;
+
+        p{
+          font-size: 16px;
+          font-family: 'Inter';
+        }
+      }
+    }
+
+    &.light{
+      background-color: var(--bg-secondary-light);
+      color: var(--text-navbar-light-color);
+    }
+
+    &.dark{
+      background-color: var(--bg-secondary-dark);
+      color: var(--text-primary-dark-color);
+    }
+  }
+}
+
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px){
+
+  .about-me{
+
+    .about-me-content{
+      padding: 60px 50px;
+    }
+  }
+
+}
+
+@media (min-width: 1120px){
+  .about-me{
+    .about-me-content{
+      padding: 60px 50px 0px;
+
+      .about-title{
+        display: flex;
+        justify-content: center;
+
+        h2{
+          font-size: 48px;
+          font-weight: 900;
+        }
+
+        .h2:first-child{
+          color: #263138;
+        }
+        .h2:nth-child(2){
+          color: #445964;
+        }
+      }
+
+      .about-wrapper{
+
+        display: flex;
+        flex-direction: row;
+
+        .about-me--description{
+          padding: 60px 0px 0px;
+        }
+
+        .lastp{
+          margin: 0;
+        }
+
+      }
+    }
+  }
+}
