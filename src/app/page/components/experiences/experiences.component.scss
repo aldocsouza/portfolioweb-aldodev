@@ -1,0 +1,55 @@
+.experiences{
+
+    height: 500px;
+
+    .max-width{
+      max-width: 1368px;
+      margin: auto;
+    }
+
+    .exp-me-content{
+
+      padding: 60px 20px;
+
+      h4{
+        color: #4459648a;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 18px;
+      }
+
+      .exp-title{
+        display: flex;
+        justify-content: center;
+
+        h2{
+          font-size: 36px;
+          font-weight: 900;
+        }
+
+        .h2:first-child{
+          color: #263138;
+        }
+        .h2:nth-child(2){
+          color: #445964;
+        }
+      }
+
+      .exp-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+      }
+
+      &.light{
+        background-color: var(--bg-secondary-light);
+        color: var(--text-navbar-light-color);
+      }
+
+      &.dark{
+        background-color: var(--bg-secondary-dark);
+        color: var(--text-primary-dark-color);
+      }
+
+    }
+  }
