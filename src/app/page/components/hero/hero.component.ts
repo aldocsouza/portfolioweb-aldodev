@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { IconGitComponent } from '../icons/icon-git/icon-git.component';
-import { IconInComponent } from '../icons/icon-in/icon-in.component';
-import { IconArrowRightComponent } from '../icons/icon-arrow-right/icon-arrow-right.component';
-import { ButtonComponent } from '../button/button.component';
-import { IconMoonComponent } from '../icons/icon-moon/icon-moon.component';
-import { AboutMeComponent } from '../about-me/about-me.component';
+
+import { ButtonComponent } from '../shared/button/button.component';
+import { IconGitComponent } from '../shared/icons/icon-git/icon-git.component';
+import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
+import { IconArrowRightComponent } from '../shared/icons/icon-arrow-right/icon-arrow-right.component';
+import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
 
 @Component({
   selector: 'hero-content',
@@ -15,7 +15,6 @@ import { AboutMeComponent } from '../about-me/about-me.component';
     IconArrowRightComponent,
     ButtonComponent,
     IconMoonComponent,
-    AboutMeComponent
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'

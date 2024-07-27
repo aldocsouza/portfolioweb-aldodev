@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { IconMoonComponent } from '../icons/icon-moon/icon-moon.component';
-import { IconSunComponent } from '../icons/icon-sun/icon-sun.component';
+
+import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
+import { IconSunComponent } from '../shared/icons/icon-sun/icon-sun.component';
 
 @Component({
   selector: 'navbar',

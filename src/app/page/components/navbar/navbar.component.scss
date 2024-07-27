@@ -59,7 +59,15 @@
 
 
 
-@media (min-width: 540px){
+@media (min-width: 576px){
+  .navbar{
+    .max-width{
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media (min-width: 768px){
   .navbar{
     .max-width{
       padding: 0px 50px;
