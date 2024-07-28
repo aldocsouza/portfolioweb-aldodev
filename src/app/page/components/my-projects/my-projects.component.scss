@@ -1,0 +1,57 @@
+.project{
+
+  padding: 60px 20px;
+
+  .max-width{
+    max-width: 1368px;
+    margin: auto;
+  }
+
+  .project-content{
+
+    h4{
+      color: #4459648a;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+
+    .project-title{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      h2{
+        font-size: 36px;
+        font-weight: 900;
+      }
+
+      .h2:first-child{
+        color: #263138;
+      }
+      .h2:nth-child(2){
+        color: #445964;
+      }
+    }
+
+    .project-cards-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 35px;
+    }
+
+    &.light{
+      background-color: inherit;
+      color: var(--text-navbar-light-color);
+    }
+
+    &.dark{
+      background-color: var(--bg-secondary-dark);
+      color: var(--text-primary-dark-color);
+    }
+
+
+  }
+}

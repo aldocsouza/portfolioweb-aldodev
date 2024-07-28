@@ -1,0 +1,18 @@
+<section class="project">
+  <div [ngClass]="theme" class="project-content max-width">
+    <div class="project-title">
+      <h2 class="h2">Meus</h2>
+      <h2 class="h2">Projetos</h2>
+    </div>
+    <h4>Estes são alguns dos trabalhos e projetos que já realizei.</h4>
+    <div class="project-cards-wrapper">
+      @for (project of projectList; track $index) {
+        @if($index %2){
+          <project-card [projectList]="project" [reverse]="'reverse-column'"></project-card>
+        }@else {
+          <project-card [projectList]="project"></project-card>
+        }
+      }
+    </div>
+  </div>
+</section>
