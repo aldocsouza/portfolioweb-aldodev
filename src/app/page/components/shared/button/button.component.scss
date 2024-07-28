@@ -1,4 +1,5 @@
-.btn{
+.btn-right, .btn-square{
+
   background-color: var(--text-primary-light-color);
   padding: 10px 20px;
   color: var(--bg-secondary-light);
@@ -9,7 +10,7 @@
 
 
 @media (min-width: 540px) {
-  .btn{
+  .btn-right, .btn-square{
     background-color: var(--text-primary-light-color);
     padding: 20px 40px;
     color: var(--bg-secondary-light);

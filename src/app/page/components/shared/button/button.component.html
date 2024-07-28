@@ -1,5 +1,5 @@
-<button [ngClass]="btnStyle">
-  <div *ngIf="btnStyle === 'btn'"></div>
+<button [ngClass]="btnStyle" class="btn" (click)="onClick()">
   {{ btnTitle }}
-  <icon-arrow-right *ngIf="btnStyle === 'btn'"></icon-arrow-right>
+  <icon-arrow-right *ngIf="btnStyle === 'btn-right'"></icon-arrow-right>
+  <icon-arrow-square *ngIf="btnStyle === 'btn-square'"></icon-arrow-square>
 </button>
