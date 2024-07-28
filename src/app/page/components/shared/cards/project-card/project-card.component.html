@@ -1,0 +1,31 @@
+<article [ngClass]="theme" class="card-project">
+    <div [ngClass]="reverse" class="card-project-wrapper">
+      <div class="card-image-content">
+        <div class="card-project--image">
+          <img [src]="projectList.image" alt="image busness">
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-project--name">
+          <h4>{{ projectList.name }}</h4>
+        </div>
+        <div class="card-project--description">
+          <span>{{ projectList.description }}</span>
+        </div>
+        <div class="card-project--languages">
+          @for (language of projectList.languages; track $index) {
+            <span>{{ language }}</span>
+          }
+        </div>
+        <div class="card-project--link">
+          <a [href]="projectList.linkDeploy" target="_blank">
+            <btn-primary
+              [btnStyle]="'btn-square'"
+              [btnTitle]="'Deploy'"
+              >
+            </btn-primary>
+          </a>
+        </div>
+      </div>
+    </div>
+</article>
