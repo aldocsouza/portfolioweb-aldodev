@@ -6,15 +6,9 @@
     </div>
     <h4>Minha jornada está apenas começando, sempre aprendendo.</h4>
     <div class="exp-cards">
-      <experience-card
-        [imageSrc]="'/assets/iasep.png'"
-        [busnessName]="'iasep - instituto de assistência aos servidores do estado do pará'"
-        [periodExp]="'Out 2023 - Presente'"
-        [role]="'estagiário desenvolvedor full stack'"
-        [description]="'
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad et accusantium natus ullam dolorem nisi, explicabo, eos similique aspernatur provident quisquam voluptate facilis hic, cupiditate debitis dignissimos a iste quod.
-        '"
-      ></experience-card>
+      @for (experience of experiencesLangs; track $index) {
+        <experience-card [experiencesLangs]="experience"></experience-card>
+      }
       <experience-card [talk]="true"></experience-card>
     </div>
   </div>
