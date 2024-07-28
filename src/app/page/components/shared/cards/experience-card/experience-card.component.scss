@@ -1,0 +1,160 @@
+.card-experience{
+
+  display: flex;
+  flex-direction: column;
+
+
+  max-width: 900px;
+
+  padding: 32px;
+  margin: auto;
+
+  color: #111827;
+
+  box-shadow: 1px 1px 5px #d5d5d5;
+  border-radius: 10px;
+
+  .card-experience-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .card-company{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .card-content{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      width: 100%;
+
+      .card-company--name{
+        h1{
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: justify;
+          font-weight: bold;
+          font-family: 'Inter';
+          color: #111827;
+        }
+      }
+
+      .card-company--period{
+        span{
+          color: #4459648a;
+          font-family: 'Inter';
+        }
+      }
+
+      .card-company--role{
+        span{
+          font-size: 18px;
+          text-transform: capitalize;
+          color: #111827;
+          font-family: 'Inter';
+          font-weight: bold;
+        }
+      }
+
+      .card-company--description{
+        border-left: 2px solid #4459648a;
+        padding-left: 10px;
+        span{
+          color: #4459648a;
+          text-align: justify;
+          font-family: 'Inter';
+        }
+      }
+
+      .card-company--languages{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        span{
+          padding: 5px 20px;
+          background-color: #E5E7EB;
+          color: #4B5563;
+          border-radius: 50px;
+
+          font-family: 'Inter';
+        }
+      }
+    }
+  }
+
+  .talk-content{
+    .talk-title{
+      text-align: center;
+
+      span{
+        font-size: 18px;
+        font-family: 'Inter';
+        color: #111827;
+        font-weight: bold;
+      }
+    }
+
+    .talk-network{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      list-style: none;
+
+      margin-top: 30px;
+      padding: 0;
+    }
+  }
+
+  &.light{
+    background-color: #FFFFFF;
+    color: var(--text-navbar-light-color);
+  }
+
+  &.dark{
+    background-color: var(--bg-secondary-dark);
+    color: var(--text-primary-dark-color);
+  }
+
+}
+
+
+@media (min-width: 768px){
+  .card-experience{
+      .card-experience-wrapper{
+
+      flex-direction: row;
+
+      .card-company{
+        width: 40%;
+      }
+    }
+
+    .talk-content{
+      .talk-title{
+        span{
+          font-size: 20px;
+        }
+      }
+
+      .talk-network{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        list-style: none;
+
+        margin-top: 30px;
+        padding: 0;
+      }
+    }
+  }
+}

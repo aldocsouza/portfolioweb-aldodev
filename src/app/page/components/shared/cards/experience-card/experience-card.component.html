@@ -1,0 +1,45 @@
+<article [ngClass]="theme" class="card-experience">
+  @if(!talk){
+    <div class="card-experience-wrapper">
+      <div class="card-company">
+        <img [src]="experiencesLangs.logo" alt="image busness">
+      </div>
+      <div class="card-content">
+        <div class="card-company--period">
+          <span>{{ experiencesLangs.period }}</span>
+        </div>
+        <div class="card-company--name">
+          <h1>{{ experiencesLangs.name }}</h1>
+        </div>
+        <div class="card-company--role">
+          <span>{{ experiencesLangs.role }}</span>
+        </div>
+        <div class="card-company--description">
+          <span>{{ experiencesLangs.description }}</span>
+        </div>
+        <div class="card-company--languages">
+          @for (language of experiencesLangs.languages; track $index) {
+            <span>{{ language }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  }@else {
+    <div class="talk-content">
+      <div class="talk-title">
+        <span>
+          Que tal ser o responsável pela próxima experiência? <br>
+          Entre com contato comigo.
+        </span>
+      </div>
+      <ul class="talk-network">
+        <li><a href="#">
+          <icon-in class="linkedIn"></icon-in>
+        </a></li>
+        <li><a href="#">
+          <icon-git class="git"></icon-git>
+        </a></li>
+      </ul>
+    </div>
+  }
+</article>
