@@ -1,0 +1,22 @@
+<section class="certifications">
+  <div [ngClass]="theme" class="cert-content max-width">
+    <div class="cert-title">
+      <h2 class="h2">Certifi</h2>
+      <h2 class="h2">cações</h2>
+    </div>
+    <div class="cert-cards">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+          <div ngxSlickItem *ngFor="let cert of certList" class="slide">
+            <certification-card [certList]="cert"></certification-card>
+          </div>
+        </ngx-slick-carousel>
+        <button class="custom-prev" (click)="prev()">
+          <icon-chevron-left></icon-chevron-left>
+        </button>
+        <button class="custom-next" (click)="next()">
+          <icon-chevron-right></icon-chevron-right>
+        </button>
+      </div>
+  </div>
+</section>
+
