@@ -38,10 +38,21 @@
       display: grid;
       justify-content: center;
       align-items: center;
-      column-gap: 50px;
+      column-gap: 20px;
       row-gap: 30px;
       grid-template-columns: auto auto auto;
     }
+
+    &.light{
+      background-color: inherit;
+      color: var(--text-navbar-light-color);
+    }
+
+    &.dark{
+      background-color: var(--bg-secondary-dark);
+      color: var(--text-primary-dark-color);
+    }
+
   }
 }
 
@@ -60,6 +71,7 @@
     .techs-me-content{
       .techs-grid{
         grid-template-columns: auto auto auto auto auto;
+        column-gap: 70px;
       }
 
       .techs-title{

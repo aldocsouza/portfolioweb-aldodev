@@ -78,7 +78,7 @@
 @media (min-width: 1120px){
   .about-me{
     .about-me-content{
-      padding: 60px 50px 0px;
+      padding: 90px 50px 0px;
 
       .about-title{
         display: flex;
@@ -114,3 +114,46 @@
     }
   }
 }
+
+
+/* @media (min-width: 1120px){
+  .about-me{
+    .about-me-content{
+      margin-top: 30px;
+      padding: 90px 50px 0px;
+
+      .about-title{
+        display: flex;
+        justify-content: center;
+
+        h2{
+          font-size: 48px;
+          font-weight: 900;
+        }
+
+        .h2:first-child{
+          color: #263138;
+        }
+        .h2:nth-child(2){
+          color: #445964;
+        }
+      }
+
+      .about-wrapper{
+
+        display: flex;
+        flex-direction: row;
+
+        .about-me--description{
+          padding: 60px 0px 0px;
+        }
+
+        .lastp{
+          margin: 0;
+        }
+
+      }
+    }
+  }
+}
+ */

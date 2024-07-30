@@ -51,7 +51,24 @@
       background-color: var(--bg-secondary-dark);
       color: var(--text-primary-dark-color);
     }
+  }
+}
 
+@media (min-width: 960px){
+  .project{
 
+    .project-content{
+  
+      h4{
+        padding: 0 60px;
+        text-align: left;
+      }
+  
+      .project-title{
+        padding: 0 60px;
+        justify-content: left;
+      }
+
+    }
   }
 }

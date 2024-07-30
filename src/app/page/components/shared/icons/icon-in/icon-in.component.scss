@@ -1,9 +1,24 @@
-.icon{
+.hero{
   width: 50px;
 }
 
+.hero:hover{
+  path{
+    fill: black;
+  }
+}
+
+.footer{
+  width: 30px;
+  path{
+    fill: black;
+  }
+}
+
+
 @media (min-width: 540px){
-  .icon{
+  .hero{
     width: 65px;
   }
 }
+

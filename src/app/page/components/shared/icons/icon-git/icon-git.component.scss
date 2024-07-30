@@ -1,9 +1,22 @@
-.icon{
+.default{
   width: 50px;
 }
 
+.default:hover{
+  path{
+    fill: black;
+  }
+}
+
+.footer{
+  width: 30px;
+  path{
+    fill: black;
+  }
+}
+
 @media (min-width: 540px){
-  .icon{
+  .default{
     width: 65px;
   }
 }
