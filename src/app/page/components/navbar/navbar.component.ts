@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 
 import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
@@ -10,7 +10,8 @@ import { IconSunComponent } from '../shared/icons/icon-sun/icon-sun.component';
   imports: [
     CommonModule,
     IconMoonComponent,
-    IconSunComponent
+    IconSunComponent,
+    NgOptimizedImage
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'

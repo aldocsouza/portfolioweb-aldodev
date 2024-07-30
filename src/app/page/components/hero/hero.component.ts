@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 
 import { ButtonComponent } from '../shared/button/button.component';
 import { IconGitComponent } from '../shared/icons/icon-git/icon-git.component';
@@ -15,6 +16,7 @@ import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component
     IconArrowRightComponent,
     ButtonComponent,
     IconMoonComponent,
+    NgOptimizedImage
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'

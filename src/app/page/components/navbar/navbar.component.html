@@ -1,7 +1,7 @@
 <nav [ngClass]="'navbar navbar-expand-lg ' + theme">
   <div class="container-fluid max-width">
     <a class="navbar-brand" href="#">
-      <img class="nav-logo" src="/assets/logo-dark.png" alt="logo-aldo">
+      <img class="nav-logo" ngSrc="/assets/logo-dark.png" width="300" height="330" alt="logo-aldo">
       <span>Aldo Souza</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -20,16 +20,16 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#about">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experiências</a>
+            <a class="nav-link" href="#exp">Experiências</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" href="#projects">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Certificações</a>
+            <a class="nav-link" href="#certifications">Certificações</a>
           </li>
           <li class="nav-item">
             @if(themeChange){
