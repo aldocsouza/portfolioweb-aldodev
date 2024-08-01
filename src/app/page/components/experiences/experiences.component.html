@@ -1,15 +1,60 @@
 <section class="experiences">
-  <div [ngClass]="theme" class="exp-me-content max-width">
-    <div class="exp-title">
-      <h2 class="h2">Experi</h2>
-      <h2 class="h2">ências</h2>
+  <div [ngClass]="theme" class="flex flex-col md:flex-row exp-me-content max-width">
+    <div class="flex-col md:w-2/4 text-center md:text-left">
+      <div class="exp-title flex justify-center md:justify-start">
+        <h2 class="h2">Experi</h2>
+        <h2 class="h2">ências</h2>
+      </div>
+      <h4>Minha jornada está apenas começando, sempre aprendendo.</h4>
     </div>
-    <h4>Minha jornada está apenas começando, sempre aprendendo.</h4>
-    <div class="exp-cards">
-      @for (experience of experiencesLangs; track $index) {
-        <experience-card [experiencesLangs]="experience"></experience-card>
-      }
-      <experience-card [talk]="true"></experience-card>
-    </div>
+    <ol class="relative w-full lg:w-2/4 border-s border-gray-200 dark:border-gray-700">
+    @for (item of experiencesLangs; track $index) {
+      <li class="mb-10 ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+             <img [src]="item.logo" alt="logo company">
+          </span>
+          <div class="flex-col items-start justify-start p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
+            <span *ngIf="item.recent" class="bg-blue-100 mb-1 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ">Mais recente</span>
+            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white"> {{ item.name }} </h3>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"> {{ item.role }} </p>
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{{ item.period }} </time>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"> {{ item.description }} </p>
+            <div class="flex gap-1 flex-wrap">
+              @for(lang of item.languages; track $index){
+                <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-3.5 py-1 rounded dark:bg-gray-700 dark:text-gray-300">{{ lang }}</span>
+              }
+            </div>
+          </div>
+      </li>
+    }
+    <li class="mb-10 ms-6">
+      <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+      </svg>
+      </span>
+      <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Sua empresa pode ser a próxima. Podemos trabalhar juntos.</h3>
+      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Vamos conversar?</p>
+      <span>
+        <ul class="flex gap-5">
+          <li>
+            <a href="https://github.com/aldocsouza" target="_blank">
+              <icon-git [iconClass]="'footer'" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/aldosouza96/" target="_blank">
+              <icon-in [iconClass]="'footer'" />
+            </a>
+          </li>
+        </ul>
+      </span>
+
+  </li>
+    </ol>
   </div>
+
+
+
+
 </section>

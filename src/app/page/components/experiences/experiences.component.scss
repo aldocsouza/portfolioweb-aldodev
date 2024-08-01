@@ -11,25 +11,24 @@
 
     h4{
       color: #4459648a;
-      text-align: center;
       margin-bottom: 50px;
       font-size: 18px;
     }
 
-    .exp-title{
-      display: flex;
-      justify-content: center;
+    div{
+      .exp-title{
 
-      h2{
-        font-size: 36px;
-        font-weight: 900;
-      }
+        h2{
+          font-size: 36px;
+          font-weight: 900;
+        }
 
-      .h2:first-child{
-        color: #263138;
-      }
-      .h2:nth-child(2){
-        color: #445964;
+        .h2:first-child{
+          color: var(--title-right-light-color);
+        }
+        .h2:nth-child(2){
+          color: var(--title-left-light-color);
+        }
       }
     }
 
@@ -40,7 +39,7 @@
     }
 
     &.light{
-      background-color: var(--bg-secondary-light);
+      background-color: transparent;
       color: var(--text-navbar-light-color);
     }
 
@@ -57,12 +56,10 @@
   .experiences{
     .exp-me-content{
       h4{
-        text-align: left;
         padding: 0 60px;
       }
-  
+
       .exp-title{
-        justify-content: left;
         padding: 0 60px;
       }
     }
