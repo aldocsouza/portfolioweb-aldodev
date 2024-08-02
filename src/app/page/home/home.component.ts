@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { HeroComponent } from '../components/hero/hero.component';
@@ -9,7 +10,6 @@ import { MyProjectsComponent } from '../components/my-projects/my-projects.compo
 import { CertificationsComponent } from '../components/certifications/certifications.component';
 import { FooterComponent } from '../components/footer/footer.component';
 import { DarkModeService } from '../services/dark-mode.service';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -28,8 +28,36 @@ import { CommonModule } from '@angular/common';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+  mybutton: HTMLElement | null = null;
 
   constructor(public darkModeService: DarkModeService){}
+
+  ngOnInit(): void {
+    if (typeof document !== 'undefined') {
+      this.mybutton = document.getElementById("myBtn");
+
+      window.onscroll = () => {
+        this.scrollFunction();
+      };
+    }
+  }
+
+  scrollFunction() {
+    if (this.mybutton) {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        this.mybutton.style.display = 'block';
+      } else {
+        this.mybutton.style.display = "none";
+      }
+    }
+  }
+
+  topFunction() {
+    if (typeof document !== 'undefined') {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
 
 }

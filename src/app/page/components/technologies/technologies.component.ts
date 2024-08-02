@@ -32,5 +32,5 @@ import { TypescriptComponent } from '../shared/icons/technologies/typescript/typ
   styleUrl: './technologies.component.scss'
 })
 export class TechnologiesComponent {
- theme: string = 'light'
+
 }

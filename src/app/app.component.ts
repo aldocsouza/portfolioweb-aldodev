@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
-import { initFlowbite } from 'flowbite';
 import { FlowbiteService } from './page/services/flowbite.service';
 import { DarkModeService } from './page/services/dark-mode.service';
-import { CommonModule } from '@angular/common';
+//@ts-ignore
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -21,12 +22,17 @@ export class AppComponent implements OnInit{
 
   constructor(
     private flowbiteService: FlowbiteService,
-    public darkModeService: DarkModeService
+    public darkModeService: DarkModeService,
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
 
   ngOnInit(): void {
     this.flowbiteService.loadFlowbite(flowbite => {
       console.log('Flowbite loaded', flowbite);
     });
+
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
   }
 }

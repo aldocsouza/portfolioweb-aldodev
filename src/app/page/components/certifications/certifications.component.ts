@@ -21,7 +21,6 @@ import { IconChevronRightComponent } from '../shared/icons/icon-chevron-right/ic
   styleUrl: './certifications.component.scss'
 })
 export class CertificationsComponent {
-  theme: string = 'light'
 
   @ViewChild('slickModal') slickModal!: SlickCarouselComponent;
 

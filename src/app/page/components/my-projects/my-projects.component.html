@@ -8,9 +8,9 @@
     <div class="project-cards-wrapper mt-10">
       @for (project of projectList; track $index) {
         @if($index %2){
-          <project-card [projectList]="project" [reverse]="'reverse-column'"></project-card>
+          <project-card [projectList]="project" [reverse]="'reverse-column'" data-aos="zoom-in-left" data-aos-duration="700"></project-card>
         }@else {
-          <project-card [projectList]="project"></project-card>
+          <project-card [projectList]="project" data-aos="zoom-in-right" data-aos-duration="700"></project-card>
         }
       }
     </div>

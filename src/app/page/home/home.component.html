@@ -1,4 +1,4 @@
-<header [ngClass]="darkModeService.darkModeSignal()" class="hero-content bg-white dark:bg-gray-950">
+<header [ngClass]="darkModeService.darkModeSignal()" class="hero-content bg-white dark:bg-gray-950 ">
     <navbar></navbar>
 </header>
 <main [ngClass]="darkModeService.darkModeSignal()" class="hero-content bg-white dark:bg-gray-950">
@@ -12,3 +12,8 @@
 <footer [ngClass]="darkModeService.darkModeSignal()" class="hero-content bg-white dark:bg-gray-950">
   <footer-component></footer-component>
 </footer>
+<!-- <button (click)="topFunction()" id="myBtn" title="Go to top">
+</button> -->
+<button (click)="topFunction()" id="myBtn" title="Go to top" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+  <svg class="h-9 w-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+  </button>

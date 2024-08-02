@@ -16,8 +16,6 @@ import { ProjectCardComponent } from '../shared/cards/project-card/project-card.
 })
 export class MyProjectsComponent {
 
-  theme: string = 'light'
-
   projectList: Project[] = [
     {
       image: '/assets/project.jpg',

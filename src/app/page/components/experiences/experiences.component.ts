@@ -19,7 +19,6 @@ import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
   styleUrl: './experiences.component.scss'
 })
 export class ExperiencesComponent {
-  theme: string = 'light'
 
   experiencesLangs: Company[] = [
     {
