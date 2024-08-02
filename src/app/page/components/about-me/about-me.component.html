@@ -1,17 +1,17 @@
-<section class="about-me">
-  <div [ngClass]="theme" class="about-me-content max-width">
-    <div class="about-title">
-      <h2 class="h2">So</h2>
-      <h2 class="h2">bre</h2>
+<section [ngClass]="darkModeService.darkModeSignal()" class="about-me bg-gray-100 dark:bg-gray-900">
+  <div class="about-me-content max-w-7xl m-auto py-14 px-5 lg:pb-0 lg:px-10">
+    <div class="about-title flex justify-center text-4xl font-black">
+      <h2 class="h2 text-gray-600 dark:text-slate-600">So</h2>
+      <h2 class="h2 text-black dark:text-gray-300">bre</h2>
     </div>
-    <div class="about-wrapper">
-      <div class="about-me--avatar">
+    <div class="about-wrapper w-full flex flex-col lg:flex-row">
+      <div class="about-me--avatar flex justify-center py-7 lg:py-0">
         <avatar-svg></avatar-svg>
       </div>
-      <div class="about-me--description">
-        <p>Sou desenvolvedor de software com mais de 10 meses de experiência em Java, Spring Boot e Angular, moro em Belém do Pará, Brasil. Tenho trabalhado em diversos projetos, abrangendo diferentes níveis de complexidade. Possuo graduação em Tecnologia de Análise e Desenvolvimento de Sistemas, o que me proporciona habilidades sólidas em desenvolvimento de software, programação, redes e banco de dados. Sou curioso e motivado, sempre em busca de criar soluções completas e seguras.</p>
-        <p>Desde 2022, quando iniciei minha faculdade, venho estudando programação de maneira contínua, complementando meus estudos com diversos cursos extras. Em 2023, obtive minha primeira oportunidade de estágio como desenvolvedor full-stack, utilizando Angular e Java/Spring Boot. Nesta posição, assumi responsabilidades significativas em projetos robustos e desafiadores, onde resolvi problemas e aprimorei meu código de forma autodidata.</p>
-        <p class="lastp">Minhas principais habilidades técnicas incluem: Angular, Java, Spring Boot, JavaScript, TypeScript, MySQL, PostgreSQL, Git e GitHub. Tenho paixão por aprender e aplicar novas tecnologias para desenvolver soluções eficientes e inovadoras.</p>
+      <div class="about-me--description text-justify text-base">
+        <p class="lg:mt-16 dark:text-gray-300">Sou desenvolvedor de software com mais de 10 meses de experiência em Java, Spring Boot e Angular, moro em Belém do Pará, Brasil. Tenho trabalhado em diversos projetos, abrangendo diferentes níveis de complexidade. Possuo graduação em Tecnologia de Análise e Desenvolvimento de Sistemas, o que me proporciona habilidades sólidas em desenvolvimento de software, programação, redes e banco de dados. Sou curioso e motivado, sempre em busca de criar soluções completas e seguras.</p>
+        <p class="mt-5 dark:text-gray-300">Desde 2022, quando iniciei minha faculdade, venho estudando programação de maneira contínua, complementando meus estudos com diversos cursos extras. Em 2023, obtive minha primeira oportunidade de estágio como desenvolvedor full-stack, utilizando Angular e Java/Spring Boot. Nesta posição, assumi responsabilidades significativas em projetos robustos e desafiadores, onde resolvi problemas e aprimorei meu código de forma autodidata.</p>
+        <p class="mt-5 dark:text-gray-300">Minhas principais habilidades técnicas incluem: Angular, Java, Spring Boot, JavaScript, TypeScript, MySQL, PostgreSQL, Git e GitHub. Tenho paixão por aprender e aplicar novas tecnologias para desenvolver soluções eficientes e inovadoras.</p>
       </div>
     </div>
   </div>

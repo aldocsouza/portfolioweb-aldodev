@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
 })
 export class IconInComponent {
 
-  @Input() iconClass: string = "hero";
+  @Input() iconClass: string = "default";
 
 
 }

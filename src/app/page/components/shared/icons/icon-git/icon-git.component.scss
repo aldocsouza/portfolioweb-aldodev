@@ -1,11 +1,11 @@
 .default{
   width: 50px;
+  height: 50px;
 }
 
-.default:hover{
-  path{
-    fill: black;
-  }
+.exp{
+  width: 30px;
+  height: 30px;
 }
 
 .footer{
@@ -14,9 +14,10 @@
     fill: black;
   }
 }
-
+/*
 @media (min-width: 540px){
   .default{
     width: 65px;
   }
 }
+ */

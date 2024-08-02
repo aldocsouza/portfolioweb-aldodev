@@ -1,49 +1,8 @@
 .certifications{
 
-  .max-width{
-    max-width: 1368px;
-    margin: auto;
-    padding: 60px 20px;
-  }
-
   .cert-content {
-
     position: relative;
-
     border: none;
-
-    .cert-title{
-      display: flex;
-      justify-content: center;
-
-      h2{
-        font-size: 36px;
-        font-weight: 900;
-      }
-
-      .h2:first-child{
-        color: #263138;
-      }
-      .h2:nth-child(2){
-        color: #445964;
-      }
-
-      .carousel{
-        display: flex;
-        gap: 100px;
-      }
-    }
-
-    &.light{
-      background-color: var(--bg-secondary-light);
-      color: var(--text-navbar-light-color);
-    }
-
-    &.dark{
-      background-color: var(--bg-secondary-dark);
-      color: var(--text-primary-dark-color);
-    }
-
   }
 
   .cert-cards{
@@ -76,16 +35,8 @@
       right: 2%;
       border-radius: 0 50% 50% 0;
     }
-
-/*     .custom-prev:hover, .custom-next:hover {
-      background-color: var(--bg-primary-light);
-      box-shadow: 0px 0px 10px #8d8d8daf;
-    }
- */
   }
-
 }
-
 
 @media (min-width: 1120px){
   .certifications{

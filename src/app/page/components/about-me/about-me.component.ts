@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AvatarSvgComponent } from '../shared/avatar-svg/avatar-svg.component';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'about-me',
@@ -15,6 +16,6 @@ import { AvatarSvgComponent } from '../shared/avatar-svg/avatar-svg.component';
 })
 export class AboutMeComponent {
 
-  theme: string = 'light'
+  constructor(public darkModeService: DarkModeService){}
 
 }

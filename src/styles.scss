@@ -1,13 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root{
   --bg-primary-light: #FBFBFB;
   --bg-secondary-light: #F3F4F6;
-  --text-primary-light-color: #445964;
+
+  --text-primary-light-color: #4b5563;
   --text-navbar-light-color: #4B5563;
-  --title-primary-light-color: #263138;
+  --title-left-light-color: #445964;
+  --title-right-light-color: #000000;
+
 
   --bg-primary-dark: #030712;
   --bg-secondary-dark: #111827;
+
   --text-primary-dark-color: #D1D5DB;
 }
 

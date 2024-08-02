@@ -8,6 +8,8 @@ import { ExperiencesComponent } from '../components/experiences/experiences.comp
 import { MyProjectsComponent } from '../components/my-projects/my-projects.component';
 import { CertificationsComponent } from '../components/certifications/certifications.component';
 import { FooterComponent } from '../components/footer/footer.component';
+import { DarkModeService } from '../services/dark-mode.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -20,11 +22,14 @@ import { FooterComponent } from '../components/footer/footer.component';
     ExperiencesComponent,
     MyProjectsComponent,
     CertificationsComponent,
-    FooterComponent
+    FooterComponent,
+    CommonModule
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+
+  constructor(public darkModeService: DarkModeService){}
 
 }

@@ -1,29 +1,43 @@
-<section class="hero-content">
-  <div class="hero-banner max-width">
-    <div class="hero-description">
-      <span>Hello World,</span>
-      <h1 class="hero-description--name">Eu sou Aldo</h1>
-      <h2 class="hero-description--title">Software Developer</h2>
-      <span>Seja bem-vindo ao meu portifólio website.</span>
-      <p>Sou desenvolvedor de software com mais de 10 meses de experiência em Java/Spring Boot e Angular. Possuo graduação em Tecnologia de Análise e Desenvolvimento de Sistemas, o que me proporciona habilidades sólidas em desenvolvimento de software, com habilidade FrontEnd e BackEnd.</p>
-      <ul class="hero-description--network">
-        <li><a href="#">
-          <icon-in class="linkedIn"></icon-in>
-        </a></li>
-        <li><a href="#">
-          <icon-git class="git"></icon-git>
-        </a></li>
-        <li><a href="/assets/curriculo.pdf" target="_blank">
-          <btn-primary
-            [btnTitle]="'Download CV'"
-            [btnStyle]="'btn-right'"
-            class="button">
-          </btn-primary>
-        </a></li>
+<section class="hero-content bg-transparent dark:bg-gray-950">
+  <div class="hero-banner max-w-7xl m-auto mt-6 flex flex-col-reverse lg:flex-row xl:my-5 2xl:my-28 p-4 lg:px-10">
+    <div class="hero-description w-full lg:w-3/6">
+      <span class="block text-xl mt-10 dark:text-gray-300">Hello World,</span>
+      <h1 class="hero-description--name text-6xl md:text-7xl font-black dark:text-gray-300">
+        Eu sou Aldo
+      </h1>
+      <h2 class="hero-description--title text-4xl md:text-5xl font-black dark:text-gray-300">
+        Software Developer
+      </h2>
+      <span class="block text-lg my-3 dark:text-gray-300">
+        Seja bem-vindo ao meu portifólio website.
+      </span>
+      <p class="text-lg text-justify dark:text-gray-300">
+        Sou desenvolvedor de software com mais de 10 meses de experiência em Java/Spring Boot e Angular. Possuo graduação em Tecnologia de Análise e Desenvolvimento de Sistemas, o que me proporciona habilidades sólidas em desenvolvimento de software, com habilidade FrontEnd e BackEnd.
+      </p>
+      <ul class="hero-description--network flex gap-5 mt-10 md:mt-20">
+        <li>
+          <a href="#">
+            <icon-in class="linkedIn"></icon-in>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <icon-git class="git"></icon-git>
+          </a>
+        </li>
+        <li>
+          <a href="/assets/curriculo.pdf" target="_blank">
+            <btn-primary
+              [btnTitle]="'Download CV'"
+              [btnStyle]="'btn-right'"
+              class="button">
+            </btn-primary>
+          </a>
+        </li>
       </ul>
     </div>
-    <div class="hero-image">
-      <img ngSrc="/assets/image-hero.png" width="420" height="530" priority />
+    <div class="hero-image  w-full lg:w-3/6">
+      <img class="block mx-auto w-56  md:w-80 lg:w-96" ngSrc="/assets/image-hero.png" width="420" height="530" priority />
     </div>
   </div>
 </section>

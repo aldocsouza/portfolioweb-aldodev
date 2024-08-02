@@ -8,12 +8,10 @@
     font-size: 16px;
   }
 
-  box-shadow: 1px 1px 5px #d5d5d5;
 
   .card-project-wrapper{
 
     border-radius: 10px;
-    box-shadow: 1px 1px 5px #d5d5d5;
 
     display: flex;
     flex-direction: column;
@@ -22,12 +20,10 @@
     .card-image-content{
       padding: 32px;
       width: 100%;
-      border-radius: 10px 0px 0px 10px;
-      background-color: #F9FAFB;
+      border-radius: 10px 10px 0px 0px;
 
       .card-project--image{
         width: 100%;
-        box-shadow: 1px 1px 5px #d5d5d5;
         border-radius: 10px;
         border: none;
 
@@ -41,20 +37,18 @@
 
     .card-content{
       width: 100%;
-      border-radius: 0px 10px 10px 0px;
+      border-radius: 0px 0px 10px 10px;
       display: flex;
       flex-direction: column;
       gap: 24px;
 
       padding: 32px;
-      background-color: #FFFFFF;
 
       .card-project--name{
         h4{
           font-weight: 700;
           text-transform: capitalize;
           font-size: 24px;
-          color: #111827;
         }
       }
 
@@ -67,15 +61,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 5px;
-
-        span{
-          padding: 5px 20px;
-          background-color: #E5E7EB;
-          color: #4B5563;
-          border-radius: 50px;
-
-          font-family: 'Inter';
-        }
 
       }
 
@@ -120,10 +105,12 @@
       .card-image-content{
         width: 50%;
         padding: 48px;
+        border-radius: 10px 0px 0px 10px;
       }
 
       .card-content{
         width: 50%;
+        border-radius: 0px 10px 10px 0px;
 
         .card-project--name{
           font-size: 18px;

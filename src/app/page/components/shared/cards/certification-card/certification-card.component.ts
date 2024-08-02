@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Certification } from '../../../../model/Certification';
 import { CommonModule } from '@angular/common';
+import { DarkModeService } from '../../../../services/dark-mode.service';
 
 @Component({
   selector: 'certification-card',
@@ -12,9 +13,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './certification-card.component.scss'
 })
 export class CertificationCardComponent {
-
-  theme: string = 'light'
-
   @Input() certList!: Certification;
+
+  constructor(public darkModeService: DarkModeService){}
+
 
 }

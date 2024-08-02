@@ -9,30 +9,7 @@
 
   .project-content{
 
-    h4{
-      color: #4459648a;
-      text-align: center;
-      margin-bottom: 50px;
-      font-size: 18px;
-    }
-
-    .project-title{
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-
-      h2{
-        font-size: 36px;
-        font-weight: 900;
-      }
-
-      .h2:first-child{
-        color: #263138;
-      }
-      .h2:nth-child(2){
-        color: #445964;
-      }
-    }
+    padding: 50px 20px;
 
     .project-cards-wrapper{
       display: flex;
@@ -41,16 +18,6 @@
       align-items: center;
       row-gap: 35px;
     }
-
-    &.light{
-      background-color: inherit;
-      color: var(--text-navbar-light-color);
-    }
-
-    &.dark{
-      background-color: var(--bg-secondary-dark);
-      color: var(--text-primary-dark-color);
-    }
   }
 }
 
@@ -58,15 +25,15 @@
   .project{
 
     .project-content{
-  
+
+      padding: 60px 50px;
+
       h4{
         padding: 0 60px;
-        text-align: left;
       }
-  
+
       .project-title{
         padding: 0 60px;
-        justify-content: left;
       }
 
     }

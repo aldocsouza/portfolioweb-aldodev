@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
 import { IconSunComponent } from '../shared/icons/icon-sun/icon-sun.component';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'navbar',
@@ -17,17 +18,11 @@ import { IconSunComponent } from '../shared/icons/icon-sun/icon-sun.component';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  mobileMenuOpen = false;
 
-  theme: string = 'light'
-  themeChange: boolean = false;
+  constructor(public darkModeService: DarkModeService){}
 
   troggleThemeMode(){
-    this.themeChange = !this.themeChange;
-  }
-
-  toggleMobileMenu() {
-    this.mobileMenuOpen = !this.mobileMenuOpen;
+    this.darkModeService.updateTheme()
   }
 
 }

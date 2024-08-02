@@ -1,53 +1,7 @@
 .experiences{
-
-  .max-width{
-    max-width: 1368px;
-    margin: auto;
-  }
-
   .exp-me-content{
 
     padding: 60px 20px;
-
-    h4{
-      color: #4459648a;
-      margin-bottom: 50px;
-      font-size: 18px;
-    }
-
-    div{
-      .exp-title{
-
-        h2{
-          font-size: 36px;
-          font-weight: 900;
-        }
-
-        .h2:first-child{
-          color: var(--title-right-light-color);
-        }
-        .h2:nth-child(2){
-          color: var(--title-left-light-color);
-        }
-      }
-    }
-
-    .exp-cards{
-      display: flex;
-      flex-direction: column;
-      gap: 38px;
-    }
-
-    &.light{
-      background-color: transparent;
-      color: var(--text-navbar-light-color);
-    }
-
-    &.dark{
-      background-color: var(--bg-secondary-dark);
-      color: var(--text-primary-dark-color);
-    }
-
   }
 }
 

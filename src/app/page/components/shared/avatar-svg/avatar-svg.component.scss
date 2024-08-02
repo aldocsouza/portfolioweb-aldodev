@@ -8,7 +8,13 @@
   }
 }
 
-@media (min-width: 1120px){
+@media (min-width: 1024px){
+  .avatar{
+    width: 430px;
+  }
+}
+
+@media (min-width: 1124px){
   .avatar{
     width: 580px;
   }

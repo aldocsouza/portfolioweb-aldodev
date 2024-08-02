@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 import { ButtonComponent } from '../shared/button/button.component';
 import { IconGitComponent } from '../shared/icons/icon-git/icon-git.component';
 import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
 import { IconArrowRightComponent } from '../shared/icons/icon-arrow-right/icon-arrow-right.component';
 import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
+import { DarkModeService } from '../../services/dark-mode.service';
 
 @Component({
   selector: 'hero-content',
@@ -16,11 +17,14 @@ import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component
     IconArrowRightComponent,
     ButtonComponent,
     IconMoonComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
+    CommonModule
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+
+  constructor(public darkModeService: DarkModeService){}
 
 }
