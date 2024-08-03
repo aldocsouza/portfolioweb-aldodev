@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit{
   constructor(public darkModeService: DarkModeService){}
 
   ngOnInit(): void {
+
     if (typeof document !== 'undefined') {
       this.mybutton = document.getElementById("myBtn");
 

@@ -18,10 +18,10 @@ export class MyProjectsComponent {
 
   projectList: Project[] = [
     {
-      image: '/assets/project.jpg',
-      name: 'portifólio modelo',
+      image: '/assets/projeto/projeto-1.png',
+      name: 'Portfólio Web Aldo Souza',
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad et accusantium natus ullam dolorem nisi, explicabo, eos similique aspernatur provident quisquam voluptate facilis hic, cupiditate debitis dignissimos a iste quod.',
-      languages: ["Java", "Spring Boot", "Angular", "Javascript", "Typescript", "MySQL", "PostgreSQL", "Jwt Token"],
+      languages: ["Angular", "Javascript", "Typescript", "Tailwindcss", "HTML", "SCSS"],
       linkDeploy: 'https://github.com/aldocsouza'
     },
     {

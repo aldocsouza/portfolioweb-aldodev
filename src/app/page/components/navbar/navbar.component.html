@@ -1,5 +1,5 @@
  <nav [ngClass]="darkModeService.darkModeSignal()" class="border-gray-200 ">
-  <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4 lg:px-10">
     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
       @if(darkModeService.darkModeSignal() === 'dark'){
         <img class="h-8 w-8 " ngSrc="/assets/logo-light.png" width="300" height="330" alt="logo-aldo">
@@ -16,9 +16,6 @@
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0   dark:border-gray-700">
-        <li>
-          <a href="#" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Home</a>
-        </li>
         <li>
           <a href="#about" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Sobre</a>
         </li>

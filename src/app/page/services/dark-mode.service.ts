@@ -1,15 +1,19 @@
-import { Injectable, signal } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DarkModeService {
 
-  darkModeSignal = signal('dark')
+  localStorage = this.document.defaultView?.localStorage;
 
-  constructor() { }
+  darkModeSignal = signal<string>(this.localStorage?.getItem('darkMode') ?? 'dark')
+
+  constructor(@Inject(DOCUMENT) private document: Document) {  }
 
   updateTheme(){
     this.darkModeSignal.update((value) => value === 'dark' ? 'null' : 'dark');
+    this.localStorage?.setItem('darkMode', this.darkModeSignal())
   }
 }

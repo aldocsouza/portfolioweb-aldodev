@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
     CommonModule
   ],
   templateUrl: './icon-git.component.html',
-  styleUrl: './icon-git.component.scss'
 })
 export class IconGitComponent {
 

@@ -26,9 +26,9 @@ export class ExperiencesComponent {
       logo: '/assets/iasep.png',
       period: 'Out 2023 - Presente',
       name: 'IASEP - Instituto de Assistência aos Servidores do Estado do Pará',
-      role: 'Estagiário Desenvolvedor Full Stack',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad et accusantium natus ullam dolorem nisi, explicabo, eos similique aspernatur provident quisquam voluptate facilis hic, cupiditate debitis dignissimos a iste quod.',
-      languages: ["Java", "Spring Boot", "Angular", "Javascript", "Typescript", "MySQL", "PostgreSQL", "Jwt Token"]
+      role: 'Estagiário Desenvolvedor',
+      description: 'Responsável como desenvolvedor principal em projetos de sistemas full-stack, incluindo front-end com Angular v16, v17 e v18, criação de APIs com Spring Boot, autenticação de usuários via JWT Token, integração Back-end | Front-end | Banco de Dados, testes de software e instrução aos usuários',
+      languages: ["Java", "Spring Boot", "Angular", "Javascript", "Typescript", "MySQL", "PostgreSQL", "Jwt Token", "Git", "GitHub"]
     }
   ]
 

@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './icon-chevron-right.component.html',
-  styleUrl: './icon-chevron-right.component.scss'
 })
 export class IconChevronRightComponent {
 

@@ -1,6 +1,6 @@
 <article [ngClass]="theme" class="card-project shadow-md">
     <div [ngClass]="reverse" class="card-project-wrapper">
-      <div class="card-image-content bg-gray-200 dark:bg-gray-700">
+      <div class="card-image-content flex justify-center items-center bg-gray-200 dark:bg-gray-700">
         <div class="card-project--image">
           <img [src]="projectList.image" alt="image busness">
         </div>
@@ -14,7 +14,9 @@
         </div>
         <div class="card-project--languages">
           @for (language of projectList.languages; track $index) {
-            <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">{{ language }}</span>
+            <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">
+              {{ language }}
+            </span>
           }
         </div>
         <div class="card-project--link">
@@ -22,6 +24,13 @@
             <btn-primary
               [btnStyle]="'btn-square'"
               [btnTitle]="'Deploy'"
+              >
+            </btn-primary>
+          </a>
+          <a [href]="projectList.linkDeploy" target="_blank">
+            <btn-primary
+              [btnStyle]="'btn-git'"
+              [btnTitle]="'Repositório'"
               >
             </btn-primary>
           </a>

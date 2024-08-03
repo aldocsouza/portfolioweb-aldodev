@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 import { IconArrowRightComponent } from '../icons/icon-arrow-right/icon-arrow-right.component';
 import { IconArrowSquareComponent } from '../icons/icon-arrow-square/icon-arrow-square.component';
+import { IconGitComponent } from "../icons/icon-git/icon-git.component";
 
 @Component({
   selector: 'btn-primary',
@@ -10,8 +11,9 @@ import { IconArrowSquareComponent } from '../icons/icon-arrow-square/icon-arrow-
   imports: [
     CommonModule,
     IconArrowRightComponent,
-    IconArrowSquareComponent
-  ],
+    IconArrowSquareComponent,
+    IconGitComponent
+],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss'
 })

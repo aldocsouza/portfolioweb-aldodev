@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
     CommonModule
   ],
   templateUrl: './icon-in.component.html',
-  styleUrl: './icon-in.component.scss',
 })
 export class IconInComponent {
 

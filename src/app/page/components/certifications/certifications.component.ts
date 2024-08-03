@@ -77,25 +77,37 @@ export class CertificationsComponent {
       name: 'Santander Coder | Back-end Java'
     },
     {
-      image: '/assets/ada.png',
-      name: 'Santander Coder | Back-end Java'
+      image: '/assets/loiane.png',
+      name: 'Angular - Loiane Groner'
+    },
+    {
+      image: '/assets/loiane.png',
+      name: 'Angular + Spring Boot - Loiane Groner'
+    },
+    {
+      image: '/assets/udemy.png',
+      name: 'Web Frontend: HTML5/CSS3/JS'
     },
     {
       image: '/assets/ada.png',
-      name: 'Santander Coder | Back-end Java'
+      name: 'Design Patterns em Java'
     },
     {
       image: '/assets/ada.png',
-      name: 'Santander Coder | Back-end Java'
+      name: 'Serviços Cloud AWS'
     },
     {
       image: '/assets/ada.png',
-      name: 'Santander Coder | Back-end Java'
+      name: 'Conhecendo sobre infraestrutura AWS'
     },
     {
       image: '/assets/ada.png',
-      name: 'Santander Coder | Back-end Java'
-    }
+      name: 'Kubernetes'
+    },
+    {
+      image: '/assets/ada.png',
+      name: 'API Rest'
+    },
   ]
 
 }
