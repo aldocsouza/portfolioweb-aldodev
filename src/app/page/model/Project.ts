@@ -3,5 +3,7 @@ export interface Project{
   name: string,
   description: string,
   languages: string[],
-  linkDeploy: string
+  linkDeploy: string,
+  present?: boolean,
+  backend?: boolean
 }
