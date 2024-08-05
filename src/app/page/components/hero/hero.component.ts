@@ -7,6 +7,7 @@ import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
 import { IconArrowRightComponent } from '../shared/icons/icon-arrow-right/icon-arrow-right.component';
 import { IconMoonComponent } from '../shared/icons/icon-moon/icon-moon.component';
 import { DarkModeService } from '../../services/dark-mode.service';
+import { IconEmailComponent } from "../shared/icons/icon-email/icon-email.component";
 
 @Component({
   selector: 'hero-content',
@@ -18,8 +19,10 @@ import { DarkModeService } from '../../services/dark-mode.service';
     ButtonComponent,
     IconMoonComponent,
     NgOptimizedImage,
-    CommonModule
-  ],
+    CommonModule,
+    IconEmailComponent,
+    IconEmailComponent
+],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })

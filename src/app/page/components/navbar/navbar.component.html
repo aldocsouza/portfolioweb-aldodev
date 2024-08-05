@@ -15,26 +15,26 @@
         </svg>
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0   dark:border-gray-700">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
         <li>
-          <a href="#about" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Sobre</a>
+          <a href="#about" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 dark:hover:bg-slate-900 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-gray-300 ">Sobre</a>
         </li>
         <li>
-          <a href="#projects" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Projetos</a>
+          <a href="#projects" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 dark:hover:bg-slate-900 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-gray-300">Projetos</a>
         </li>
         <li>
-          <a href="#exp" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Experiências</a>
+          <a href="#exp" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 dark:hover:bg-slate-900 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-gray-300">Experiências</a>
         </li>
         <li>
-          <a href="#certifications" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-white">Certificações</a>
+          <a href="#certifications" class="block w-full py-2 px-3 text-gray-600 rounded hover:bg-slate-300 dark:hover:hover:bg-slate-900 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 dark:text-gray-300 dark:hover:text-gray-300">Certificações</a>
         </li>
         <li>
           @if(darkModeService.darkModeSignal() === 'dark'){
-            <span class="block w-full py-2 px-3 text-gray-300 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 cursor-pointer" (click)="troggleThemeMode()">
+            <span class="block w-full py-2 px-3 text-gray-300 rounded hover:bg-slate-300 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 cursor-pointer dark:hover:hover:bg-slate-900" (click)="troggleThemeMode()">
               <icon-sun></icon-sun>
             </span>
           }@else {
-            <span class="block w-full py-2 px-3  fill-gray-300 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 cursor-pointer" (click)="troggleThemeMode()">
+            <span class="block w-full py-2 px-3  fill-gray-300 text-gray-600 rounded hover:bg-slate-300 md:hover:bg-transparent md:dark:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 cursor-pointer " (click)="troggleThemeMode()">
               <icon-moon></icon-moon>
             </span>
           }

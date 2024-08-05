@@ -1,10 +1,10 @@
 <section class="project bg-gray-100 dark:bg-gray-900">
   <div class="project-content max-w-7xl m-auto py-14 px-5 lg:pb-0 lg:px-10 dark:bg-gray-900">
-    <div class="project-title flex gap-3 justify-center text-4xl font-black">
-      <h2 class="h2 text-gray-600 dark:text-slate-600">Meus</h2>
-      <h2 class="h2 text-black dark:text-gray-300">Projetos</h2>
-    </div>
-    <h4 class="text-xl text-center mt-3 mb-8 text-gray-400 dark:text-gray-300">Estes são alguns dos trabalhos e projetos que já realizei.</h4>
+    <h2 class="project-title flex gap-3 justify-center">
+      <div class="text-black text-5xl dark:text-gray-300 font-black">Meus</div>
+      <div class="text-gray-600 text-5xl dark:text-slate-600 font-black">Projetos</div>
+    </h2>
+    <h3 class="text-xl text-center mt-3 mb-8 text-gray-400 dark:text-gray-300">Estes são alguns dos trabalhos e projetos que já realizei.</h3>
     <div class="project-cards-wrapper mt-10">
       @for (project of projectList; track $index) {
         @if($index %2){

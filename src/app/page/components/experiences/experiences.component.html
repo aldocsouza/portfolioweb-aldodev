@@ -1,11 +1,11 @@
 <section class="experiences">
-  <div class="flex flex-col md:flex-row exp-me-content max-w-7xl m-auto">
+  <div class="flex flex-col lg:flex-row exp-me-content max-w-7xl m-auto">
     <div class="flex-col md:w-2/4 text-center md:text-left">
-      <div class="exp-title flex justify-center lg:justify-start text-4xl font-black">
-        <h2 class="h2 text-black dark:text-gray-300">Experi</h2>
-        <h2 class="h2 text-gray-600 dark:text-slate-600">ências</h2>
-      </div>
-      <h4 class="text-xl mt-3 mb-8 text-gray-400 dark:text-gray-300">Minha jornada está apenas começando, sempre aprendendo.</h4>
+      <h2 class="project-title flex justify-center md:justify-start ">
+        <div class="text-gray-600 text-5xl dark:text-slate-600 font-black">Experi</div>
+        <div class="text-black text-5xl dark:text-gray-300 font-black">ências</div>
+      </h2>
+      <h3 class="text-xl mt-3 mb-8 text-gray-400 dark:text-gray-300">Minha jornada está apenas começando, sempre aprendendo.</h3>
     </div>
     <ol class="relative w-full lg:w-2/4 border-s border-gray-200 dark:border-gray-700" data-aos="fade-up" data-aos-duration="700">
     @for (item of experiencesLangs; track $index) {
@@ -39,12 +39,17 @@
           <ul class="flex gap-5">
             <li>
               <a href="https://www.linkedin.com/in/aldosouza96/" target="_blank">
-                <icon-in [iconClass]="'exp'" />
+                <icon-in [iconClass]="'w-6 fill-gray-700 dark:fill-gray-300 dark:hover:fill-white'" />
               </a>
             </li>
             <li>
               <a href="https://github.com/aldocsouza" target="_blank">
-                <icon-git [iconClass]="'exp'" />
+                <icon-git [iconClass]="'w-6 fill-gray-700 dark:fill-gray-300 dark:hover:fill-white'" />
+              </a>
+            </li>
+            <li>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aldocnsouza@gmail.com&su=Olá,%20Aldo,%20vi%20seu%20portifólio!" target="_blank">
+                <icon-email class="git" [iconClass]="'w-7 fill-gray-700 dark:fill-gray-300 dark:hover:fill-white'"></icon-email>
               </a>
             </li>
           </ul>

@@ -20,13 +20,15 @@
           }
         </div>
         <div class="card-project--link">
-          <a [href]="projectList.linkDeploy" target="_blank">
-            <btn-primary
-              [btnStyle]="'btn-square'"
-              [btnTitle]="'Deploy'"
-              >
-            </btn-primary>
-          </a>
+          @if (projectList.present !== true) {
+            <a [href]="projectList.linkDeploy" target="_blank">
+              <btn-primary
+                [btnStyle]="'btn-square'"
+                [btnTitle]="'Deploy'"
+                >
+              </btn-primary>
+            </a>
+          }
           <a [href]="projectList.linkDeploy" target="_blank">
             <btn-primary
               [btnStyle]="'btn-git'"

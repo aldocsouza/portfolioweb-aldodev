@@ -18,19 +18,13 @@ export class MyProjectsComponent {
 
   projectList: Project[] = [
     {
-      image: '/assets/projeto/projeto-1.png',
+      image: '/assets/projeto/portfolio.jpg',
       name: 'Portfólio Web Aldo Souza',
-      description: 'Este site foi criado para apresentar minhas habilidades, experiências e projetos de uma forma organizada e atraente. Este portfólio não apenas demonstra minhas habilidades técnicas, mas também reflete minha paixão pelo desenvolvimento de software e meu compromisso com a excelência. Sinta-se à vontade para explorar!',
-      languages: ["Angular", "Javascript", "Typescript", "Tailwindcss", "HTML", "SCSS"],
-      linkDeploy: 'https://github.com/aldocsouza/portfolioweb-aldodev'
+      description: 'Este projeto foi criado para apresentar minhas habilidades, experiências e projetos de uma forma organizada e atraente. Este portfólio não apenas demonstra minhas habilidades técnicas, mas também reflete minha paixão pelo desenvolvimento de software e meu compromisso com a excelência. Sinta-se à vontade para explorar!',
+      languages: ["Angular", "Javascript", "Typescript", "Tailwindcss", "HTML", "SCSS", "GIT", "CI/CD"],
+      linkDeploy: 'https://github.com/aldocsouza/portfolioweb-aldodev',
+      present: true
     },
-    {
-      image: '/assets/project.jpg',
-      name: 'portifólio modelo',
-      description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad et accusantium natus ullam dolorem nisi, explicabo, eos similique aspernatur provident quisquam voluptate facilis hic, cupiditate debitis dignissimos a iste quod.',
-      languages: ["Java", "Spring Boot", "Angular", "Javascript", "Typescript", "MySQL", "PostgreSQL", "Jwt Token"],
-      linkDeploy: 'https://github.com/aldocsouza'
-    }
   ]
 
 }

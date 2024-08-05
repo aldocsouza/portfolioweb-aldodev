@@ -21,6 +21,7 @@ export class ButtonComponent {
 
   @Input() btnStyle: string = 'btn';
   @Input() btnTitle: string = 'default'
+  @Input() btnDisabled: boolean = false
   @Output() buttonActive = new EventEmitter<boolean>(false);
 
   onClick(){

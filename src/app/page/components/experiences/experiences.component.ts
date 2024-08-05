@@ -5,6 +5,7 @@ import { ExperienceCardComponent } from '../shared/cards/experience-card/experie
 import { Company } from '../../model/Company';
 import { IconGitComponent } from '../shared/icons/icon-git/icon-git.component';
 import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
+import { IconEmailComponent } from '../shared/icons/icon-email/icon-email.component';
 
 @Component({
   selector: 'experiences',
@@ -13,7 +14,8 @@ import { IconInComponent } from '../shared/icons/icon-in/icon-in.component';
     CommonModule,
     ExperienceCardComponent,
     IconGitComponent,
-    IconInComponent
+    IconInComponent,
+    IconEmailComponent
   ],
   templateUrl: './experiences.component.html',
   styleUrl: './experiences.component.scss'
