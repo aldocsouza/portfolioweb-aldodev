@@ -28,7 +28,6 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
     this.flowbiteService.loadFlowbite(flowbite => {
-      console.log('Flowbite loaded', flowbite);
     });
 
     if (isPlatformBrowser(this.platformId)) {

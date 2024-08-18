@@ -29,9 +29,10 @@ export class ExperiencesComponent {
       period: 'Out 2023 - Presente',
       name: 'IASEP - Instituto de Assistência aos Servidores do Estado do Pará',
       role: 'Estagiário Desenvolvedor',
-      description: 'Responsável como desenvolvedor principal em projetos de sistemas full-stack, incluindo front-end com Angular v16, v17 e v18, criação de APIs com Spring Boot, autenticação de usuários via JWT Token, integração Back-end | Front-end | Banco de Dados, testes de software e instrução aos usuários',
+      description: 'Atuei como desenvolvedor principal em projetos, contribuindo com expertise tanto no front-end com Angular v15+ quanto no back-end com Java. Criei APIs utilizando Spring Boot, implementei autenticação de usuários via JWT Token e integrei back-end, front-end e banco de dados. Além disso, realizei testes de software abrangentes e ofereci instrução aos usuários para garantir a eficácia das soluções desenvolvidas.',
       languages: ["Java", "Spring Boot", "Angular", "Javascript", "Typescript", "MySQL", "PostgreSQL", "Jwt Token", "Git", "GitHub"]
     }
   ]
 
 }
+
