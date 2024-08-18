@@ -1,27 +1,78 @@
-# PortfolioAldodev
+# Portfólio Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
+Este é o meu portfólio web desenvolvido com Angular 18. Aqui, você pode encontrar informações sobre os meus projetos, habilidades e experiências profissionais.
 
-## Development server
+![Screenshot do Portfólio](./public/assets/projeto/portfolio.jpg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Apresentação pessoal
+- Seção de habilidades
+- Detalhes dos projetos com imagens e descrições
+- Experiência Profissional
+- Certificações
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ![Angular](https://img.shields.io/badge/Angular-18-red?logo=angular) [Angular 18](https://angular.io/)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2.0-0ea5e9?logo=tailwind-css&logoColor=white) [Tailwind CSS](https://tailwindcss.com/)
+- ![Flowbite](https://img.shields.io/badge/Flowbite-1.0-38bdf8?logo=flowbite&logoColor=white) [Flowbite](https://flowbite.com/)
+- ![Firebase Hosting](https://img.shields.io/badge/Firebase-Hosting-ffca28?logo=firebase) [Firebase Hosting](https://firebase.google.com/products/hosting)
+- ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=github-actions&logoColor=white) [GitHub Actions](https://github.com/features/actions) para CI/CD
 
-## Running unit tests
+## Como Rodar o Projeto Localmente
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone o repositório:**
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/aldocsouza/portfolioweb-aldodev.git
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+cd portfolioweb-aldodev
+```
 
-## Further help
+2. **Instale as dependências:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento:**
+
+```bash
+ng serve
+```
+
+4. **Abra o navegador e navegue até http://localhost:4200/.**
+
+# Deploy
+O deploy do projeto é realizado no Firebase Hosting. Para realizar o deploy, siga os passos abaixo:
+
+1. **Configure o Firebase CLI:**
+
+```bash
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+```
+
+2. **Faça o build do projeto:**
+
+```bash
+ng build --prod
+```
+
+3. **Deploy para o Firebase:**
+
+```bash
+firebase deploy
+```
+
+## Contato
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
+
+* Email: aldocnsouza@gmail.com
+* LinkedIn: https://www.linkedin.com/in/aldosouza96/
+* GitHub: https://github.com/aldocsouza
