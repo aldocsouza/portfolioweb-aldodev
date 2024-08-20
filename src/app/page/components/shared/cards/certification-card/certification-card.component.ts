@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Certification } from '../../../../model/Certification';
 import { CommonModule } from '@angular/common';
+
+import { Certification } from '../../../../model/Certification';
 import { DarkModeService } from '../../../../services/dark-mode.service';
 
 @Component({
