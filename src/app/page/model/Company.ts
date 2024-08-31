@@ -5,5 +5,10 @@ export interface Company{
   period: string,
   role: string,
   description: string,
+  previous?: boolean,
+  previousName?: string,
+  previousPeriod?: string,
+  previousRole?: string,
+  previousDescription?: string,
   languages: string[]
 }

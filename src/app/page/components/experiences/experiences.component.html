@@ -19,6 +19,14 @@
             <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"> {{ item.role }} </p>
             <time class="block mb-2 text-sm font-normal leading-none text-gray-400">{{ item.period }} </time>
             <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 text-justify"> {{ item.description }} </p>
+
+            <div *ngIf="item.previous">
+              <hr>
+              <p class="mb-4 text-base mt-4 font-normal text-gray-500 dark:text-gray-400"> {{ item.previousRole }} </p>
+              <time class="block mb-2 text-sm font-normal leading-none text-gray-400">{{ item.previousPeriod }} </time>
+              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-300 text-justify"> {{ item.previousDescription }} </p>
+            </div>
+
             <div class="flex gap-1 flex-wrap">
               @for(lang of item.languages; track $index){
                 <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">{{ lang }}</span>
